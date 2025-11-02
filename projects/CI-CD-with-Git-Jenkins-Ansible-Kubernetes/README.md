@@ -1,0 +1,1 @@
+This project demonstrates a complete CI/CD pipeline implementation using Git, Jenkins, Ansible, and Kubernetes. It automates the build, test, deploy, and delivery process of a sample web application, showcasing real-world DevOps practices used in production.
