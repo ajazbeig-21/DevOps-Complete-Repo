@@ -2,13 +2,13 @@ This project demonstrates a complete CI/CD pipeline implementation using Git, Je
 
 # Project Introduction
 
-## Phase 1 : Code Check-In
+### Phase 1 : Code Check-In
 this is the phase where the developer writes a code and get it merged into master/main branch post the proper PR Requests. for this we are using the Version control system like Git.
 
-## Phase 2 : Code Build
+### Phase 2 : Code Build
 after the completion of the Code Check-In, we need to build a Artifact for an further deployment. for code build we are using Jenkins
 
-## Phase 3 : Continious Delivery
+### Phase 3 : Continious Delivery
 after building an artifact from phase 2, we need to get it deployed on a VM or  Docker Container or Kubernetes for that we need continuous delivery solution. in this project we are usign Ansible for this.
 
 ---
