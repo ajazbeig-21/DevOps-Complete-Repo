@@ -85,3 +85,5 @@ To implement Continuous Deployment effectively, you typically need:
 ---
 
 🚀 **CI/CD** ensures that your software delivery process is **fast, consistent, and reliable**, reducing human errors and increasing developer productivity.
+
+We need to setup a Jenkins
