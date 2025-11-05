@@ -33,3 +33,55 @@ fot this we will be doing Setup of an Ansible server, integration of Docker host
 4. Deployment of Artifact on a EKS - Kubernetes Cluster.
 for this we are using AWS Managed kubernetes Service called EKS. we will be doing setup of EKS, writing Pod, Service, Deployment manifests, integrate Kubernetes with Ansible, will be writing Ansible playbooks for Deployment and Service Creation and finally CI/CD Job to build code on ansible and deploy it on Kubernetes
 ![Deploy Artifact on K8s using ansible](assets/cicd-ansible-kubernetes.png)
+
+# ⚙️ What is CI/CD?
+
+**CI/CD** stands for **Continuous Integration** and **Continuous Delivery/Deployment**.  
+It’s a key DevOps practice that enables faster, more reliable, and automated software delivery.
+
+---
+
+## 🔹 Continuous Integration (CI)
+
+Continuous Integration is the process where source code from multiple developers or workstations is **merged frequently** into a central repository (usually the `main` or `master` branch).
+
+Once the code is merged:
+- Automated **builds** and **tests** run to validate the new code.
+- Any anomalies or integration issues introduced during the merge are detected early.
+- This ensures the application remains stable and deployable at all times.
+
+---
+
+## 🔹 Continuous Delivery (CD)
+
+Continuous Delivery focuses on **automating deployments** to various environments such as:
+- **Development**
+- **Staging**
+- **Production**
+
+The deployment may still require **manual approval** before moving to higher environments (like production).  
+The main goal is to make every build **deployable on demand** with minimal manual intervention.
+
+---
+
+## 🔹 Continuous Deployment (CD)
+
+If the deployment process is **fully automated** — meaning the application automatically moves from code check-in to production deployment **without manual approval** — it’s called **Continuous Deployment**.
+
+To implement Continuous Deployment effectively, you typically need:
+- Multiple environments (Dev → Staging → Prod)
+- Robust testing and monitoring pipelines
+- Proper rollback mechanisms
+
+---
+
+### 🧩 In summary:
+| Stage | Focus | Description |
+|--------|--------|-------------|
+| **CI** | Integration | Merge code frequently and run automated tests |
+| **CD (Delivery)** | Automation | Deploy code to environments with manual approval |
+| **CD (Deployment)** | Full Automation | Automatically deploy to production once all tests pass |
+
+---
+
+🚀 **CI/CD** ensures that your software delivery process is **fast, consistent, and reliable**, reducing human errors and increasing developer productivity.
