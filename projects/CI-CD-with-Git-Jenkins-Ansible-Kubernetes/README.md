@@ -85,3 +85,33 @@ To implement Continuous Deployment effectively, you typically need:
 ---
 
 🚀 **CI/CD** ensures that your software delivery process is **fast, consistent, and reliable**, reducing human errors and increasing developer productivity.
+
+# 🚀 Jenkins Server Setup Guide (on AWS EC2 - Linux)
+
+This guide walks through setting up a **Jenkins Server** on a **Linux EC2 instance** — from instance creation to accessing the Jenkins Web UI.
+
+---
+
+## 🧩 Steps Overview
+
+1. **Spin up a Linux EC2 instance**
+2. **Install Java**
+3. **Install Jenkins**
+4. **Start Jenkins service**
+5. **Access Jenkins Web UI**
+
+---
+
+## ⚙️ 1. Launch a Linux EC2 Instance
+
+1. Log in to your **AWS Management Console**.
+2. Navigate to **EC2 → Instances → Launch Instance**.
+3. Choose:
+   - **AMI:** Amazon Linux 2 (or Ubuntu 22.04)
+   - **Instance type:** t2.micro (Free tier eligible)
+   - **Key pair:** Create or select an existing one
+   - **Security group:** Allow ports `22` (SSH), `8080` (Jenkins)
+4. Click **Launch Instance**.
+5. SSH into your instance:
+   ```bash
+   ssh -i <your-key.pem> ec2-user@<your-ec2-public-ip>
