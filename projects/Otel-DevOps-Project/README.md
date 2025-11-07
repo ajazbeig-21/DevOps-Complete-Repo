@@ -146,6 +146,23 @@ When creating the user, optionally require a password change at first sign-in an
 
 ![Store Credentials](./assets/iam-credentail.png)
 
+
+Let's Spin up the Virtual machine. for this we will be using AWS EC2 Service. use ubuntu and instance type t2.large. and create a key pair. for windows download .ppk file else .pem key file
+allow ssh so that we can log into the server and assign the public ip to it.
+
+then launch the instance and wait till the Instance State is running.
+
+now lets connect to the EC2 instance.
+ssh -i <.pem file name> username@<public_ip>
+
+Access denied. .pem file permission are too open.
+
+chmod 400 <.pem file name>
+ssh -i <.pem file name> username@<public_ip>
+
+Now we're connected to the EC2 instance.
+
+[a relative link](./installation/docker-Installation.md)
 ## Learning outcomes
 
 By working through this project you will learn:
