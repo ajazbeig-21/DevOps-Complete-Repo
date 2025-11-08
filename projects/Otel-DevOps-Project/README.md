@@ -185,7 +185,15 @@ When creating the user, optionally require a password change at first sign-in an
 
 ### Docker Installation
 
-For detailed Docker installation instructions, see: [Docker Installation Guide](./installation/docker-Installation.md)
+For detailed Docker installation instructions, see:  
+[Docker Installation Guide](./content/docker-Installation.md)
+
+---
+
+### Docker Lifecycle & Collaboration
+
+There is also a Docker lifecycle and collaboration workflow to follow when working as a DevOps engineer:  
+[Docker Lifecycle and Collaboration](./content/docker-lifecycle-and-collaboration.md)
 
 ## 📚 Learning Outcomes
 
