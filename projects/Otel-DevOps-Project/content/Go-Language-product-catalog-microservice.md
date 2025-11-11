@@ -24,7 +24,7 @@ WORKDIR /src/app
 
 RUN go mod download
 
-RUN go build -o /go/bin/project-catalog ./
+RUN go build -o project-catalog ./
 
 FROM alpine AS release
 
@@ -33,11 +33,11 @@ WORKDIR /usr/src/app
 // copy json containing the products
 
 COPY ./products ./products
-COPY --from=builder /go/bin/product-catalog ./
+COPY --from=builder /usr/src/app/product-catalog ./
 
-EXPOSE ${PRODUCT_CATALOG_PORT}
+ENV PRODUCT_CATALOG_PORT 8088
 ENTRYPOINT ["./product-catalog"]
 
 ---
 
-docker build -t 
+docker build -t <docker-registry-username>/<docker-image>:<tag> .

@@ -195,6 +195,10 @@ For detailed Docker installation instructions, see:
 There is also a Docker lifecycle and collaboration workflow to follow when working as a DevOps engineer:  
 [Docker Lifecycle and Collaboration](./content/docker-lifecycle-and-collaboration.md)
 
+### Solution for the common issues you may face during this project
+
+[Common Issues](./content/common-issues.md)
+
 ## 📚 Learning Outcomes
 
 By working through this project, you will gain expertise in:
