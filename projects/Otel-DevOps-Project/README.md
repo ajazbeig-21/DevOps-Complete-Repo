@@ -205,6 +205,8 @@ There is also a Docker lifecycle and collaboration workflow to follow when worki
 
 [Java Dockerfile](./content/Java-Language-ads-microservice.md)
 
+[Python Dockerfile](./content/Python-Language-recommendation-microservice.md)
+
 ## 📚 Learning Outcomes
 
 By working through this project, you will gain expertise in:
