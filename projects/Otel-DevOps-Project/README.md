@@ -208,7 +208,7 @@ There is also a Docker lifecycle and collaboration workflow to follow when worki
 [Python Dockerfile](./content/Python-Language-recommendation-microservice.md)
 
 ### To Setup an Terraform infra please go through this document
-[Terraform Moduke](./content/terraform.md)
+[Terraform Module](./content/terraform.md)
 ## 📚 Learning Outcomes
 
 By working through this project, you will gain expertise in:

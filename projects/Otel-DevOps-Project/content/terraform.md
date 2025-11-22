@@ -33,14 +33,14 @@ Our application is deployed on an EKS cluster within a VPC. To ensure that users
 
 ```mermaid
 graph TD
-    A[User/Customer] --> B[Internet Gateway (IGW)]
-    B --> C[Public Subnet]
-    C --> D[Frontend Application]
-    E[Private Subnet] --> F[EKS Cluster]
-    F --> G[NAT Gateway]
-    G --> H[Internet]
+    A["User/Customer"] --> B["Internet Gateway (IGW)"]
+    B --> C["Public Subnet"]
+    C --> D["Frontend Application"]
+    E["Private Subnet"] --> F["EKS Cluster"]
+    F --> G["NAT Gateway"]
+    G --> H["Internet"]
     E --> G
-    I[VPC] --> C
+    I["VPC"] --> C
     I --> E
     I --> B
     I --> G
